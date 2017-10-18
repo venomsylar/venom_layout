@@ -1,3 +1,19 @@
+$("#menuOpen").click(function (e) {
+    $(this).toggleClass("opened");
+});
+$('.content table').wrap('<div class="table_wrap">');
+$('#mainMenu li.menu-item-has-children').append('<span class="subMenuButton"></span>');
+$('.subMenuButton').click(function () {
+    var t = $(this);
+    if(t.hasClass('open')) {
+        t.removeClass('open').prev().slideUp(300);
+    } else {
+        t.removeClass('open').prev().slideDown(300);
+        t.addClass('open');
+    }
+});
+
+
 /**
  * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -409,7 +425,7 @@ var ssc_uniqueID = function () {
 }();
 
 var ischrome = /chrome/.test(navigator.userAgent.toLowerCase());
-if (ischrome) {
+if (false) {
     ssc_addEvent("mousedown", ssc_mousedown);
     ssc_addEvent("mousewheel", ssc_wheel);
     ssc_addEvent("load", ssc_init)
