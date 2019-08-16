@@ -34,11 +34,46 @@
            * `scroll-to-top.php`
         * **`header`** - _files, that are included in header_
            * **`head`**
-                * `tag-manager`
+                * **`tag-manager`**
+                    * `tag-manager-first-part.php`
+                    * `tag-manager-second-part.php`
                 * `google-analytics.php`
                 * `google-site-verification.php`
                 * `hotjar.php`
            * `main-menu.php`
+        * **`shortcodes`**
+            * `custom-pagination.php`
+            * `google-rating.php`
+* **`inc`**
+    * **`classes`**
+        * `ACFRelationshipTemplateFilter.php`
+        * `CustomPostType.php`
+        * `CustomTaxonomy.php`
+        * `PostUrlShortcutRewriter.php`
+        * `TaxUrlShortcutRewriter.php`
+        * `WPStructuralElements.php`
+    * **`plugins`**
+        * `cyr-to-lat.php`
+        * `duplicator.php`
+        * `filter-by-template.php`
+        * `lowercase-url.php`
+        * `scroll-to-top.php`
+    * `classes.php`
+    * `configuration.php`
+    * `custom-functions.php`
+    * `enqueue.php`
+    * `filters.php`
+    * `plugins.php`
+    * `registration.php`
+    * `shortcodes.php`
+* **`acf-json`**
+* **`assets`**
+    * **`development`**
+        * **`images`**
+        * **`js`**
+        * **`styles`**
+        * `main.js`
+        
 ## Plugins
 
 ##### Advanced Custom Fields PRO
