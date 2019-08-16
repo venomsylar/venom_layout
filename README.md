@@ -71,8 +71,43 @@
     * **`development`**
         * **`images`**
         * **`js`**
+            * `404.js`
+            * `dynamic-modules.js`
+            * `main.js`
         * **`styles`**
+            * **`components`**
+                * `fonts.scss`
+                * `mixins.scss`
+                * `reset.scss`
+                * `tools.scss`
+                * `variables.scss`
+            * **`layout`**
+                * **`404`**
+                    * `404.scss`
+                * **`global`**
+                    * `common-styles.scss`
+                    * `footer.scss`
+                    * `header.scss`
+                    * `main-menu.scss`
+            * **`objects`**
+                * `buttons.scss`
+                * `pagination.scss`
+                * `privacy-block.scss`
+                * `rating.scss`
+                * `scroll-to-top.scss`
+                * `social-media.scss`
+                * `text-elements.scss`
+            * `layouts.scss`
+            * `main.scss`
         * `main.js`
+    * **`dist`**
+    * **`fonts`**
+        * `icons.eot`
+        * `icons.svg`
+        * `icons.ttf`
+        * `icons.woff`
+        * `icons-guide.png`
+    * **`images`**
         
 ## Plugins
 
