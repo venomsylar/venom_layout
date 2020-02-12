@@ -17,17 +17,3 @@ export default function detectBrowserAndOS() {
 		}
 	}
 }
-
-/**
- * Warning for browser update
- */
-function updateYourBrowser($BrowserVersion) {
-	$('body').append(
-			'<div class="browser_update_alert">' +
-			'<div class="browser_update_alert_wrap">' +
-			'<h3>Your browser (Internet Explorer ' + $BrowserVersion + ') is out of date. <br> Upgrade your browser to improve the security, speed and performance of this site.</h3>' +
-			'<p><a target="_blank" rel="nofollow noopener" href="https://www.microsoft.com/en-us/download/internet-explorer.aspx">Click to update</a></p>' +
-			'</div>' +
-			'</div>'
-	);
-}

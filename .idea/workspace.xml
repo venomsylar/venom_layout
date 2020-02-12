@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14230673-a953-4220-9e06-be85d00e1f63" name="Default" comment="">
+    <list default="true" id="14230673-a953-4220-9e06-be85d00e1f63" name="Default" comment="Version 2.0.0. || Added Webpack and made global refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/lib.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/logic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/flexbox.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/rwd.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/tools.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/lib.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/development/assets/js/components/crossbrowsering.js" beforeDir="false" afterPath="$PROJECT_DIR$/development/assets/js/components/crossbrowsering.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +44,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -84,10 +85,33 @@
       <updated>1502352458574</updated>
       <workItem from="1502352459986" duration="1408000" />
       <workItem from="1581538318411" duration="10000" />
+      <workItem from="1581538342979" duration="859000" />
     </task>
+    <task id="LOCAL-00001" summary="Version 2.0.0. || Added Webpack and made global refactoring">
+      <created>1581538467061</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581538467061</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version 2.0.0. || Added Webpack and made global refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.0.0. || Added Webpack and made global refactoring" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1203" y="204" key="CommitChangelistDialog2" timestamp="1581538460766">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1203" y="204" key="CommitChangelistDialog2/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581538460766" />
+    <state x="1112" y="524" key="Vcs.Push.Dialog.v2" timestamp="1581538469279">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1112" y="524" key="Vcs.Push.Dialog.v2/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581538469279" />
   </component>
 </project>
