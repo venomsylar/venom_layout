@@ -1,0 +1,50 @@
+@import '../settings/05-mixins';
+@import '../settings/01-variables';
+
+/***
+  Form elements
+ */
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="password"], textarea {
+	width: 100%;
+	height: $input-height;
+	font-size: $font-base;
+	font-weight: 400;
+	padding: 0 15px;
+	border: 1px solid #ccc;
+	@include transition();
+	background: #fff;
+
+	&:focus {
+		box-shadow: 0 0 2px 0 $main-color;
+	}
+}
+
+textarea {
+	resize: vertical;
+	padding: 10px;
+	@include media-breakpoint-down(767.98) {
+		height: 70px;
+	}
+	@include media-breakpoint-up(768) {
+		height: 100px;
+	}
+}
+
+.form_item {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.button_parent {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #333333;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: #333333;
+	opacity: 1;
+}

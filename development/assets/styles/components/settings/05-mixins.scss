@@ -1,0 +1,150 @@
+@import '01-variables';
+
+@mixin transition($property: all, $duration: .4s, $easing: ease-in-out) {
+	transition: $property $duration $easing;
+}
+
+@mixin center($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if ($horizontal) {
+		left: 50%;
+		transform: translate(-50%, 0);
+	} @else if ($vertical) {
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+@function strip-units($value) {
+	@return ($value / ($value * 0 + 1));
+}
+
+@function rem($pxval) {
+	@if not unitless($pxval) {
+		$pxval: strip-units($pxval);
+	}
+	$base: $font-base;
+	@if not unitless($base) {
+		$base: strip-units($base);
+	}
+	@return ($pxval / $base) * 1rem;
+}
+
+@mixin boxGrid($columnNumber, $spacingPercent, $checker:true) {
+	$contentPercent: 100%;
+	$sideMargin: ($spacingPercent/2);
+	$marginInt: strip-units($sideMargin);
+	margin: #{0} -#{$sideMargin};
+	width: $contentPercent + $spacingPercent;
+	@if ($checker) {
+		display: flex;
+		justify-content: flex-start;
+		flex-flow: wrap;
+		@include transition();
+	}
+	> * {
+		width: ($contentPercent/$columnNumber) - $spacingPercent;
+		margin: 0 #{$sideMargin} ($marginInt + ($marginInt / $columnNumber) * rem(1))
+	}
+}
+
+@mixin last-p {
+	p:last-child {
+		padding-bottom: 0
+	}
+}
+
+@mixin left-right-margin {
+	&:first-of-type {
+		margin-left: 0;
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+@mixin left-right-padding {
+	&:first-of-type {
+		padding-left: 0;
+	}
+	&:last-of-type {
+		padding-right: 0;
+	}
+}
+
+@mixin hover {
+	@include media-breakpoint-up(1025) {
+		&:hover {
+			@content
+		}
+	}
+}
+
+@mixin flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+@mixin media-breakpoint-up($breakpoint) {
+	@media (min-width: $breakpoint + px) {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+	@media (max-width: $breakpoint + px) {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-between($min, $max) {
+	@media (min-width: $min + px) and (max-width: $max + px) {
+		@content;
+	}
+}
+
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: url($file-name + '.woff2') format('woff2'),
+		url($file-name + '.woff') format('woff'),
+		url($file-name + '.ttf') format('truetype'),
+		url($file-name + '.eot');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+@mixin responsive-flex() {
+	&_lg {
+		@include media-breakpoint-up(1025) {
+			@content;
+		}
+	}
+	&_md {
+		@include media-breakpoint-up(768) {
+			@content;
+		}
+	}
+	&_sm {
+		@include media-breakpoint-up(480) {
+			@content;
+		}
+	}
+	&_wrap {
+		@content;
+	}
+}
+
+@mixin set-z-index() {
+	@each $name, $zi in $z-index {
+		#{$name} {
+			z-index: $zi;
+		}
+	}
+}

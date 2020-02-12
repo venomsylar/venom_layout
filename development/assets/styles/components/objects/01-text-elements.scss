@@ -1,0 +1,103 @@
+@import '../settings/05-mixins';
+@import '../settings/01-variables';
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: 700;
+	line-height: 1.2;
+	padding-bottom: 20px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	display: block;
+}
+
+h1, .h1 {
+	@include media-breakpoint-up(1025) {
+
+	}
+	@include media-breakpoint-between(768, 1024.98) {
+
+	}
+	@include media-breakpoint-down(767.98) {
+
+	}
+}
+
+h2, .h2 {
+	@include media-breakpoint-up(1025) {
+
+	}
+	@include media-breakpoint-between(768, 1024.98) {
+
+	}
+	@include media-breakpoint-down(767.98) {
+
+	}
+}
+
+h3, .h3 {
+	@include media-breakpoint-up(1025) {
+
+	}
+	@include media-breakpoint-between(768, 1024.98) {
+
+	}
+	@include media-breakpoint-down(767.98) {
+
+	}
+}
+
+h4, .h4 {
+	@include media-breakpoint-up(1025) {
+
+	}
+	@include media-breakpoint-between(768, 1024.98) {
+
+	}
+	@include media-breakpoint-down(767.98) {
+
+	}
+}
+
+h5, .h5 {
+	@include media-breakpoint-up(1025) {
+
+	}
+	@include media-breakpoint-between(768, 1024.98) {
+
+	}
+	@include media-breakpoint-down(767.98) {
+
+	}
+}
+
+h6, .h6 {
+	@include media-breakpoint-up(1025) {
+
+	}
+	@include media-breakpoint-between(768, 1024.98) {
+
+	}
+	@include media-breakpoint-down(767.98) {
+
+	}
+}
+
+p {
+	line-height: 1.4;
+	padding-bottom: 20px;
+}
+
+a {
+	color: $main-color;
+	text-decoration: none;
+	@include transition();
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&.thumbnail {
+		display: inline-block;
+	}
+}

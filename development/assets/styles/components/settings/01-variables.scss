@@ -1,0 +1,17 @@
+$container-width: 1140px;
+$font-color: #333;
+$main-color: #28a745;
+$input-height: 40px;
+$font-base: 16px;
+$font-base-responsive: 13px;
+$font-weight: 400;
+$main-font: "Open Sans";
+
+$z-index: (
+		'header': 2000,
+		'#main_menu': 1500,
+		'#main_menu .sub-menu': 100,
+		'body::before': -900,
+		'body.shadow::before': 900,
+		'.fullframe': 0,
+);

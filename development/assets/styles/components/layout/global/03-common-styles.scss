@@ -1,0 +1,42 @@
+@import '../../settings/05-mixins';
+@import '../../settings/01-variables';
+/** Lists **/
+.content {
+	ol {
+		@include media-breakpoint-down(767.98) {
+			margin: 0 0 15px 10px;
+		}
+		@include media-breakpoint-up(768) {
+			margin: 0 0 22px 15px;
+		}
+
+		li {
+			list-style-position: inside;
+		}
+	}
+
+	ul {
+		@include media-breakpoint-down(767.98) {
+			margin: 0 0 15px 10px;
+		}
+		@include media-breakpoint-up(768) {
+			margin: 0 0 22px 15px;
+		}
+
+		li {
+			padding: 5px 0 5px 15px;
+			position: relative;
+
+			&:before {
+				content: "";
+				width: 4px;
+				height: 4px;
+				position: absolute;
+				top: $font-base;
+				left: 0;
+				border-radius: 50%;
+				background: $main-color;
+			}
+		}
+	}
+}
