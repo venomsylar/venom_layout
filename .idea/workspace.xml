@@ -44,7 +44,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -55,8 +55,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -105,13 +116,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="Version 2.0.0. || Added Webpack and made global refactoring" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1203" y="204" key="CommitChangelistDialog2" timestamp="1581538460766">
+    <state x="1203" y="204" key="CommitChangelistDialog2" timestamp="1581539273912">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state x="1203" y="204" key="CommitChangelistDialog2/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581538460766" />
-    <state x="1112" y="524" key="Vcs.Push.Dialog.v2" timestamp="1581538469279">
+    <state x="1203" y="204" key="CommitChangelistDialog2/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581539273912" />
+    <state width="3757" height="549" key="GridCell.Tab.0.bottom" timestamp="1581539408148">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state x="1112" y="524" key="Vcs.Push.Dialog.v2/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581538469279" />
+    <state width="3757" height="549" key="GridCell.Tab.0.bottom/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581539408148" />
+    <state width="3757" height="549" key="GridCell.Tab.0.center" timestamp="1581539408148">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3757" height="549" key="GridCell.Tab.0.center/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581539408148" />
+    <state width="3757" height="549" key="GridCell.Tab.0.left" timestamp="1581539408148">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3757" height="549" key="GridCell.Tab.0.left/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581539408148" />
+    <state width="3757" height="549" key="GridCell.Tab.0.right" timestamp="1581539408148">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="3757" height="549" key="GridCell.Tab.0.right/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581539408148" />
+    <state x="1112" y="524" key="Vcs.Push.Dialog.v2" timestamp="1581539278967">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1112" y="524" key="Vcs.Push.Dialog.v2/0.0.3840.2120/-1920.330.1920.1040@0.0.3840.2120" timestamp="1581539278967" />
   </component>
 </project>
